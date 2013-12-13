@@ -8,14 +8,18 @@
 
 #import "AppDelegate.h"
 #import "LoadViewController.h"
-
+#import "MenuViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     LoadViewController *loadView = [[LoadViewController alloc] init];
-    self.window.rootViewController = loadView;
+    MenuViewController *menuViewController = [[MenuViewController alloc] init];
+    NSArray *array = [NSArray arrayWithObjects:loadView,menuViewController,nil];
+    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    tabBar.viewControllers = array;
+    self.window.rootViewController = tabBar;
     
     return YES;
 }

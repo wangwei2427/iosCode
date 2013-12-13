@@ -19,6 +19,7 @@
 		2696953E185AA8790033F82C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2696953C185AA8790033F82C /* MainStoryboard.storyboard */; };
 		26969541185AA8790033F82C /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969540185AA8790033F82C /* LoadViewController.m */; };
 		2696954B185AAB070033F82C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696954A185AAB070033F82C /* QuartzCore.framework */; };
+		26969556185B25510033F82C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969555185B25510033F82C /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		2696953F185AA8790033F82C /* LoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadViewController.h; sourceTree = "<group>"; };
 		26969540185AA8790033F82C /* LoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadViewController.m; sourceTree = "<group>"; };
 		2696954A185AAB070033F82C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		26969554185B25510033F82C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		26969555185B25510033F82C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				2696953F185AA8790033F82C /* LoadViewController.h */,
 				26969540185AA8790033F82C /* LoadViewController.m */,
 				2696952B185AA8790033F82C /* Supporting Files */,
+				26969554185B25510033F82C /* MenuViewController.h */,
+				26969555185B25510033F82C /* MenuViewController.m */,
 			);
 			path = loadDemo;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				26969531185AA8790033F82C /* main.m in Sources */,
 				26969535185AA8790033F82C /* AppDelegate.m in Sources */,
 				26969541185AA8790033F82C /* LoadViewController.m in Sources */,
+				26969556185B25510033F82C /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
