@@ -20,6 +20,7 @@
 		26969541185AA8790033F82C /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969540185AA8790033F82C /* LoadViewController.m */; };
 		2696954B185AAB070033F82C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696954A185AAB070033F82C /* QuartzCore.framework */; };
 		26969556185B25510033F82C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969555185B25510033F82C /* MenuViewController.m */; };
+		26969559185B40270033F82C /* MyAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969558185B40270033F82C /* MyAlterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		2696954A185AAB070033F82C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		26969554185B25510033F82C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		26969555185B25510033F82C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		26969557185B40270033F82C /* MyAlterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlterView.h; sourceTree = "<group>"; };
+		26969558185B40270033F82C /* MyAlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				26969540185AA8790033F82C /* LoadViewController.m */,
 				26969554185B25510033F82C /* MenuViewController.h */,
 				26969555185B25510033F82C /* MenuViewController.m */,
+				26969557185B40270033F82C /* MyAlterView.h */,
+				26969558185B40270033F82C /* MyAlterView.m */,
 				2696952B185AA8790033F82C /* Supporting Files */,
 			);
 			path = loadDemo;
@@ -186,6 +191,7 @@
 				26969535185AA8790033F82C /* AppDelegate.m in Sources */,
 				26969541185AA8790033F82C /* LoadViewController.m in Sources */,
 				26969556185B25510033F82C /* MenuViewController.m in Sources */,
+				26969559185B40270033F82C /* MyAlterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
