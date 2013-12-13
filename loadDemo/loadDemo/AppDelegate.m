@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "LoadViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    LoadViewController *loadView = [[LoadViewController alloc] init];
+    self.window.rootViewController = loadView;
+    
     return YES;
 }
 							

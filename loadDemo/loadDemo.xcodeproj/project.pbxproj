@@ -17,7 +17,7 @@
 		26969539185AA8790033F82C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26969538185AA8790033F82C /* Default@2x.png */; };
 		2696953B185AA8790033F82C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2696953A185AA8790033F82C /* Default-568h@2x.png */; };
 		2696953E185AA8790033F82C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2696953C185AA8790033F82C /* MainStoryboard.storyboard */; };
-		26969541185AA8790033F82C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969540185AA8790033F82C /* ViewController.m */; };
+		26969541185AA8790033F82C /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969540185AA8790033F82C /* LoadViewController.m */; };
 		2696954B185AAB070033F82C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696954A185AAB070033F82C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +36,8 @@
 		26969538185AA8790033F82C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2696953A185AA8790033F82C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2696953D185AA8790033F82C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		2696953F185AA8790033F82C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26969540185AA8790033F82C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2696953F185AA8790033F82C /* LoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadViewController.h; sourceTree = "<group>"; };
+		26969540185AA8790033F82C /* LoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadViewController.m; sourceTree = "<group>"; };
 		2696954A185AAB070033F82C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -90,8 +90,8 @@
 				26969533185AA8790033F82C /* AppDelegate.h */,
 				26969534185AA8790033F82C /* AppDelegate.m */,
 				2696953C185AA8790033F82C /* MainStoryboard.storyboard */,
-				2696953F185AA8790033F82C /* ViewController.h */,
-				26969540185AA8790033F82C /* ViewController.m */,
+				2696953F185AA8790033F82C /* LoadViewController.h */,
+				26969540185AA8790033F82C /* LoadViewController.m */,
 				2696952B185AA8790033F82C /* Supporting Files */,
 			);
 			path = loadDemo;
@@ -179,7 +179,7 @@
 			files = (
 				26969531185AA8790033F82C /* main.m in Sources */,
 				26969535185AA8790033F82C /* AppDelegate.m in Sources */,
-				26969541185AA8790033F82C /* ViewController.m in Sources */,
+				26969541185AA8790033F82C /* LoadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +302,7 @@
 				26969546185AA8790033F82C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
