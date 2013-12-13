@@ -16,6 +16,7 @@
     // Override point for customization after application launch.
     LoadViewController *loadView = [[LoadViewController alloc] init];
     MenuViewController *menuViewController = [[MenuViewController alloc] init];
+    menuViewController.title = @"MyAlterView";
     NSArray *array = [NSArray arrayWithObjects:loadView,menuViewController,nil];
     UITabBarController *tabBar = [[UITabBarController alloc] init];
     tabBar.viewControllers = array;

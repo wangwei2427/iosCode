@@ -95,9 +95,9 @@
 				2696953C185AA8790033F82C /* MainStoryboard.storyboard */,
 				2696953F185AA8790033F82C /* LoadViewController.h */,
 				26969540185AA8790033F82C /* LoadViewController.m */,
-				2696952B185AA8790033F82C /* Supporting Files */,
 				26969554185B25510033F82C /* MenuViewController.h */,
 				26969555185B25510033F82C /* MenuViewController.m */,
+				2696952B185AA8790033F82C /* Supporting Files */,
 			);
 			path = loadDemo;
 			sourceTree = "<group>";
