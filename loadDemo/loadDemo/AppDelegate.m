@@ -9,19 +9,18 @@
 #import "AppDelegate.h"
 #import "LoadViewController.h"
 #import "MenuViewController.h"
+#import "ContentViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    LoadViewController *loadView = [[LoadViewController alloc] init];
-    MenuViewController *menuViewController = [[MenuViewController alloc] init];
-    menuViewController.title = @"MyAlterView";
-    NSArray *array = [NSArray arrayWithObjects:loadView,menuViewController,nil];
-    UITabBarController *tabBar = [[UITabBarController alloc] init];
-    tabBar.viewControllers = array;
-    self.window.rootViewController = tabBar;
     
+    ContentViewController *contentViewController = [[ContentViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:contentViewController];
+    nav.navigationBar.topItem.title=@"titile";
+    self.window.rootViewController = nav;
     return YES;
 }
 							

@@ -19,6 +19,7 @@
 
 @end
 @implementation MyAlterView
+
 - (MyAlterView *) initWithTitle:(NSString *)title Content:(NSString *)content sureButton:(NSString *)sureButtonName cancelButton:(NSString *)cancelButtonName{
     if (self = [super init]) {
     self.backgroundColor = [UIColor orangeColor];

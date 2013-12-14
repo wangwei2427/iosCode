@@ -8,13 +8,13 @@
 
 #import "MenuViewController.h"
 #import "MyAlterView.h"
+#import "AligmentLabel.h"
 
 @interface MenuViewController ()
 
 @end
 
 @implementation MenuViewController
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,16 +32,25 @@
     UIButton *button1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button1.frame = CGRectMake(30, 50, 100, 50);
     button1.tag = 1;
-    [button1 setTitle:@"一个按钮" forState:UIControlStateNormal];
+    [button1 setTitle:@"one button" forState:UIControlStateNormal];
     [button1 addTarget:self action:@selector(showAlterView:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *button2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button2.frame = CGRectMake(30, 150, 100, 50);
+    button2.frame = CGRectMake(150, 50, 100, 50);
     button2.tag = 2;
-    [button2 setTitle:@"二个按钮" forState:UIControlStateNormal];
+    [button2 setTitle:@"two button" forState:UIControlStateNormal];
     [button2 addTarget:self action:@selector(showAlterView:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button1];
     [self.view addSubview:button2];
+    
+    AligmentLabel *label = [[AligmentLabel alloc] initWithFrame:CGRectMake(30, 100, 260, 100)];
+    //label.backgroundColor = [UIColor clearColor];
+    label.backgroundColor = [UIColor orangeColor];
+    label.verticalAlignment = textAligmentTop;
+    label.numberOfLines = 10;
+    label.text = @"This is a aligment label!";
+    [self.view addSubview:label];
+    self.num = 2;
 }
 - (void)showAlterView:(UIButton *) sender {
     NSString *str = nil;
@@ -49,6 +58,7 @@
     MyAlterView *alter = [[MyAlterView alloc] initWithTitle:@"My alterView" Content:@"It is my own custom alterview" sureButton:@"OK" cancelButton:str];
     [alter show];
 }
+
 - (void) viewDidAppear:(BOOL)animated {
  
 }

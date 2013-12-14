@@ -59,17 +59,19 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    UIView *view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
     view.backgroundColor = [UIColor redColor];
     NSArray *array = [NSArray arrayWithObjects:@"195",@"285",@"15",@"105", nil];
     self.customLayer = [[CustomLayer alloc] initWithFrame:self.view.bounds withAngleArray:array];
     NSArray *array1 = [NSArray arrayWithObjects:@"190",@"280",@"10",@"100", nil];
     self.customLayer1 = [[CustomLayer alloc] initWithFrame:self.view.bounds withAngleArray:array1];
-    [view.layer addSublayer:self.customLayer];
-    [view.layer addSublayer:self.customLayer1];
-    [self.view addSubview:view];
+    [self.view.layer addSublayer:self.customLayer];
+    [self.view.layer addSublayer:self.customLayer1];
     
-    self.title = @"UIActivity";
+    UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom];
+    [button setTitle: @"按钮" forState: UIControlStateNormal];
+    [button sizeToFit];
+    self.navigationItem.titleView = button;
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewDidAppear:YES];
@@ -89,14 +91,13 @@
     self.customLayer1.lineWidth = self.view.frame.size.width * 0.08;
     self.customLayer1.colorLine = [UIColor orangeColor];
     [self.customLayer1 setNeedsDisplay];
-    
 
-
+    self.navigationController.navigationItem.title = @"123456";
 }
 - (void) viewDidAppear:(BOOL)animated {
    
     [super viewDidAppear:YES];
-    
+     
     [self.customLayer addAnimation:[self animation:-1] forKey:nil];
     
     [self.customLayer1 addAnimation:[self animation:1] forKey:nil];

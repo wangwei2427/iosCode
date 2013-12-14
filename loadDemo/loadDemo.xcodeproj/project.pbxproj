@@ -21,6 +21,9 @@
 		2696954B185AAB070033F82C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696954A185AAB070033F82C /* QuartzCore.framework */; };
 		26969556185B25510033F82C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969555185B25510033F82C /* MenuViewController.m */; };
 		26969559185B40270033F82C /* MyAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969558185B40270033F82C /* MyAlterView.m */; };
+		26969564185C29B50033F82C /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26969563185C29B50033F82C /* Property List.plist */; };
+		26969567185C316F0033F82C /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969566185C316F0033F82C /* ContentViewController.m */; };
+		2696956A185C318B0033F82C /* AligmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26969569185C318A0033F82C /* AligmentLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,11 @@
 		26969555185B25510033F82C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		26969557185B40270033F82C /* MyAlterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlterView.h; sourceTree = "<group>"; };
 		26969558185B40270033F82C /* MyAlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlterView.m; sourceTree = "<group>"; };
+		26969563185C29B50033F82C /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Property List.plist"; path = "../Property List.plist"; sourceTree = "<group>"; };
+		26969565185C316F0033F82C /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		26969566185C316F0033F82C /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		26969568185C318A0033F82C /* AligmentLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AligmentLabel.h; sourceTree = "<group>"; };
+		26969569185C318A0033F82C /* AligmentLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AligmentLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,8 @@
 			children = (
 				26969533185AA8790033F82C /* AppDelegate.h */,
 				26969534185AA8790033F82C /* AppDelegate.m */,
+				26969565185C316F0033F82C /* ContentViewController.h */,
+				26969566185C316F0033F82C /* ContentViewController.m */,
 				2696953C185AA8790033F82C /* MainStoryboard.storyboard */,
 				2696953F185AA8790033F82C /* LoadViewController.h */,
 				26969540185AA8790033F82C /* LoadViewController.m */,
@@ -102,6 +112,9 @@
 				26969555185B25510033F82C /* MenuViewController.m */,
 				26969557185B40270033F82C /* MyAlterView.h */,
 				26969558185B40270033F82C /* MyAlterView.m */,
+				26969568185C318A0033F82C /* AligmentLabel.h */,
+				26969569185C318A0033F82C /* AligmentLabel.m */,
+				26969563185C29B50033F82C /* Property List.plist */,
 				2696952B185AA8790033F82C /* Supporting Files */,
 			);
 			path = loadDemo;
@@ -177,6 +190,7 @@
 				26969539185AA8790033F82C /* Default@2x.png in Resources */,
 				2696953B185AA8790033F82C /* Default-568h@2x.png in Resources */,
 				2696953E185AA8790033F82C /* MainStoryboard.storyboard in Resources */,
+				26969564185C29B50033F82C /* Property List.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +206,8 @@
 				26969541185AA8790033F82C /* LoadViewController.m in Sources */,
 				26969556185B25510033F82C /* MenuViewController.m in Sources */,
 				26969559185B40270033F82C /* MyAlterView.m in Sources */,
+				26969567185C316F0033F82C /* ContentViewController.m in Sources */,
+				2696956A185C318B0033F82C /* AligmentLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
