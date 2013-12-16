@@ -9,7 +9,7 @@
 #import "MenuViewController.h"
 #import "MyAlterView.h"
 #import "AligmentLabel.h"
-
+#import "SpotLightButton.h"
 @interface MenuViewController ()
 
 @end
@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor greenColor];
     
     UIButton *button1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button1.frame = CGRectMake(30, 50, 100, 50);
@@ -51,6 +51,12 @@
     label.text = @"This is a aligment label!";
     [self.view addSubview:label];
     self.num = 2;
+    
+    SpotLightButton *spot = [[SpotLightButton alloc] initWithFrame:CGRectMake(30, 300, 200, 50)];
+    self.navigationItem.titleView = spot;
+    
+    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action:nil];
+    self.navigationItem.rightBarButtonItem = right;
 }
 - (void)showAlterView:(UIButton *) sender {
     NSString *str = nil;

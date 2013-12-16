@@ -9,7 +9,6 @@
 #import "ContentViewController.h"
 #import "LoadViewController.h"
 #import "MenuViewController.h"
-
 @interface ContentViewController ()
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSArray *dataArray;
@@ -55,12 +54,22 @@
     return cell;
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        LoadViewController *load = [[LoadViewController alloc] init];
-        [self.navigationController pushViewController:load animated:YES];
-    } else if (indexPath.row == 1) {
-        MenuViewController *menu = [[MenuViewController alloc] init];
-        [self.navigationController pushViewController:menu animated:YES];
+    switch (indexPath.row) {
+        case 0:{
+            LoadViewController *load = [[LoadViewController alloc] init];
+            [self.navigationController pushViewController:load animated:YES];
+        }
+            break;
+        case 1: {
+            MenuViewController *menu = [[MenuViewController alloc] init];
+            [self.navigationController pushViewController:menu animated:YES];
+        }
+            break;
+        case 2: {
+
+        }
+        default:
+            break;
     }
 
 }

@@ -10,13 +10,11 @@
 #import "LoadViewController.h"
 #import "MenuViewController.h"
 #import "ContentViewController.h"
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
     ContentViewController *contentViewController = [[ContentViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:contentViewController];
     nav.navigationBar.topItem.title=@"titile";
