@@ -4,5 +4,7 @@
 <array>
 	<string>CALayer paint and Animation</string>
 	<string>customAlterView and aligmentLabel,aligmentTop</string>
+	<string>customTabBar</string>
+	<string>CoreDataViewController</string>
 </array>
 </plist>

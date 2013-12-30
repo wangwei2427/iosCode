@@ -9,6 +9,9 @@
 #import "ContentViewController.h"
 #import "LoadViewController.h"
 #import "MenuViewController.h"
+#import "TabViewController.h"
+#import "CoreDataViewController.h"
+
 @interface ContentViewController ()
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSArray *dataArray;
@@ -66,7 +69,27 @@
         }
             break;
         case 2: {
-
+            
+            NSArray *imageArray = [NSArray arrayWithObjects:@"tab_bar_2",@"tab_bar_1",@"tab_bar_3",@"tab_bar_4",@"tab_bar_5",@"tab_bar_6",@"tab_bar_7",@"tab_bar_4", nil];
+            
+            NSMutableArray *vcArray = [[NSMutableArray alloc] initWithCapacity:0];
+            for (int i = 0; i < 6; i++) {
+                UIViewController *vc = [[UIViewController alloc] init];
+                vc.view.backgroundColor = [UIColor yellowColor];
+                UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
+                label.text = [NSString stringWithFormat:@"%d",i];
+                label.font = [UIFont systemFontOfSize:30];
+                [vc.view addSubview:label];
+                [vcArray addObject:vc];
+            }
+            TabViewController *tabbar = [[TabViewController alloc] initWithViewArray:vcArray imageArray:imageArray];
+            [self.navigationController pushViewController:tabbar animated:YES];
+            break;
+        }
+        case 3: {
+            CoreDataViewController *coreDataViewController = [[CoreDataViewController alloc] initWithNibName:@"CoreDataViewController" bundle:nil];
+            [self.navigationController pushViewController:coreDataViewController animated:YES];
+        
         }
         default:
             break;

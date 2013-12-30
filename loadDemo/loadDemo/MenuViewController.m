@@ -10,6 +10,7 @@
 #import "MyAlterView.h"
 #import "AligmentLabel.h"
 #import "SpotLightButton.h"
+#import "AnimationTabBar.h"
 @interface MenuViewController ()
 
 @end

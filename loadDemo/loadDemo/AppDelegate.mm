@@ -47,6 +47,54 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    NSError *error;
+    if (self.manageObjectContext != nil) {
+        if ([self.manageObjectContext hasChanges] && ![self.manageObjectContext save:&error]) {
+            NSLog(@"Error: %@ , %@",error,[error userInfo]);
+        }
+    }
+}
+
+- (NSPersistentStoreCoordinator *)persostentStore {
+    if (_persostentStore != nil) {
+        return _persostentStore;
+    }
+    
+    //得到数据库的路径
+    NSString *docs = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    //CoreData是建立在SQLite之上的，数据库名称需与Xcdatamodel文件同名
+    NSURL *storeUrl = [NSURL fileURLWithPath:[docs stringByAppendingPathComponent:@"player.sqlite"]];
+    NSError *error = nil;
+    _persostentStore = [[NSPersistentStoreCoordinator alloc]initWithManagedObjectModel:[self manageObjectModel]];
+    
+    if (![_persostentStore addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
+        NSLog(@"Error: %@,%@",error,[error userInfo]);
+    }
+    
+    return _persostentStore;
+}
+
+- (NSManagedObjectContext *)manageObjectContext {
+    if (_manageObjectContext != nil) {
+        return _manageObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persostentStore];
+    
+    if (coordinator != nil) {
+        _manageObjectContext = [[NSManagedObjectContext alloc]init];
+        [_manageObjectContext setPersistentStoreCoordinator:coordinator];
+    }
+    
+    return _manageObjectContext;
+}
+
+- (NSManagedObjectModel *)manageObjectModel {
+    if (_manageObjectModel != nil) {
+        return _manageObjectModel;
+    }
+    _manageObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+    return _manageObjectModel;
 }
 
 @end

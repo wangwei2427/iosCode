@@ -71,7 +71,10 @@
     UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom];
     [button setTitle: @"按钮" forState: UIControlStateNormal];
     [button sizeToFit];
+    self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
     self.navigationItem.titleView = button;
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor greenColor];
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewDidAppear:YES];
